@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Forms: Request Access</title></head>
+	<body>
+		<h1>Request Access</h1>
+		<form action="php/req_access.php" method="post">
+			<p>First Name: <input type="text" name="firstname" /> </p>
+			<p>Last Name: <input type="text" name="lastname" /> </p>
+			<p>Email: <input type="email" name="email" /> </p>
+			
+			<input type="radio" name="fac_or_student" value="faculty" /> Faculty
+			<input type="radio" name="fac_or_student" value="student" /> Student
+			
+			<p>I currently ... (check all that apply) </p>
+			<input type="checkbox" name="involvement" value="none" /> Have no involvement in this project <br />
+			<input type="checkbox" name="involvement" value="instructor" /> Am an instructor in this project <br />
+			<input type="checkbox" name="involvement" value="instructor_other" /> Am an instructor a different project <br />
+			<input type="checkbox" name="involvement" value="student" /> Am a student in this project <br />
+			<input type="checkbox" name="involvement" value="student_other" /> Am a student in a different project <br />
+			<input type="checkbox" name="involvement" value="admin" /> Am a college administrator <br />
+			<input type="checkbox" name="involvement" value="external" /> Am an external reviewer <br />
+			<input type="checkbox" name="involvement" value="superman" /> Am superman <br />
+			
+			<p>Tell us a bit about yourself</p>
+			<textarea rows="6" cols="50"> Other details...</textarea><br />
+			<input type="submit" value="Submit Request" />
+		</form>
+	</body>
+</html>

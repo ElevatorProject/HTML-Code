@@ -20,12 +20,6 @@ figcaption {
 	font-size: 90%;
 	}
 
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .mkbold {font-weight: bold; color: red;}
 .mkunderlined {text-decoration: underline; color: red}
 
