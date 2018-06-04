@@ -3,9 +3,10 @@
 	<head>
 		<title>Project Plan Breakdown - By Week</title>
 		<style>
-body {background-color: gainsboro;}
-h1 {color: blue;}
-ol {color: darkgreen;}
+		body {background-color: gainsboro;}
+		h1 {color: blue;}
+		ol{color: darkgreen;}
+		table, th, td {border: 1px solid black;}
 		</style>
 	</head>
 
@@ -26,34 +27,297 @@ ol {color: darkgreen;}
 			<li>Investigate and develop connectivity between IDN and internet</li>
 			<li>Complete fully functioning CAN system</li>
 			<li>Oral presentation, Final Report, and Video Demonstration</li>
-		</ol>
-		<p>Simple table with header</p>
-		<table border=1>
+		</ol> <br/>
+		
+		<h2>Project Gantt Chart</h2>
+		<p><strong>Gantt Chart Legend</strong></p>
+		<table>
 			<tr>
-				<th>Week 1</th>
-				<th>Week 2</th>
-				<th>Week 3</th>
-				<th>Week 4</th>
-				<th>Week 5</th>
-				<th>Week 6</th>
-				<th>Week 7</th>
-				<th>Week 8</th>
-				<th>Week 9</th>
-				<th>Week 10</th>
-				<th>Week 11</th>
-				<th>Week 12</th>
-				<th>Week 13</th>
-				<th>Week 14</th>
+				<th bgcolor="silver">Colour</th>
+				<th bgcolor="silver">Status</th>
 			</tr>
 			<tr>
-				<td>Info</td>
-				<td>Some more info</td>
+				<td bgcolor="green"></td>
+				<td>Completed</td>
 			</tr>
 			<tr>
-				<td>Yep</td>
-				<td>yep</td>
+				<td bgcolor="yellow"></td>
+				<td>In Progress</td>
 			</tr>
-		</table>
+			<tr>
+				<td bgcolor="red"></td>
+				<td>Incomplete</td>
+			</tr>
+		</table> <br/>
+		
+		<table>
+			<tr>
+				<th bgcolor="silver">Task</th>
+				<th bgcolor="silver">Status</th>
+				<th bgcolor="silver">Week 1</th>
+				<th bgcolor="silver">Week 2</th>
+				<th bgcolor="silver">Week 3</th>
+				<th bgcolor="silver">Week 4</th>
+				<th bgcolor="silver">Week 5</th>
+				<th bgcolor="silver">Week 6</th>
+				<th bgcolor="silver">Week 7</th>
+				<th bgcolor="silver">Week 8</th>
+				<th bgcolor="silver">Week 9</th>
+				<th bgcolor="silver">Week 10</th>
+				<th bgcolor="silver">Week 11</th>
+				<th bgcolor="silver">Week 12</th>
+				<th bgcolor="silver">Week 13</th>
+				<th bgcolor="silver">Week 14</th>
+			</tr>
+<!--Phase 1 (4 Weeks) -->
+			<tr>
+				<td>Design CAN messaging protocol</td>
+				<td bgcolor="green"></td> <!--Status colour-->
+				<td bgcolor="DarkGrey">D</td>
+				<td bgcolor="DarkGrey">D</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Plan CAN node configuration</td>
+				<td bgcolor="green"></td> <!--Status colour-->
+				<td bgcolor="DarkGrey">D,B</td>
+				<td bgcolor="DarkGrey">D,B</td>
+				<td bgcolor="DarkGrey">D,B</td>
+				<td bgcolor="DarkGrey">D,B</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Fully functioning CAN network (2+ CAN Nodes)</td>
+				<td bgcolor="yellow"></td> <!--Status colour-->
+				<td bgcolor="DarkGrey">D,B,O</td>
+				<td bgcolor="DarkGrey">D,B,O</td>
+				<td bgcolor="DarkGrey">D,B,O</td>
+				<td bgcolor="DarkGrey">D,B,O</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Create a test plan, document results</td>
+				<td bgcolor="green"></td> <!--Status colour-->
+				<td bgcolor="DarkGrey">D,B,O</td>
+				<td bgcolor="DarkGrey">D,B,O</td>
+				<td bgcolor="DarkGrey">D,B,O</td>
+				<td bgcolor="DarkGrey">D,B,O</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Web Development - Front End</td>
+				<td bgcolor="yellow"></td> <!--Status colour-->
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+<!--Phase 2 (7 Weeks) -->
+			<tr>
+				<td>Web Development - Back End</td>
+				<td bgcolor="yellow"></td> <!--Status colour-->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>User interface for remote control</td>
+				<td bgcolor="yellow"></td> <!--Status colour-->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="DarkGrey">D</td>
+				<td bgcolor="DarkGrey">D</td>
+				<td bgcolor="DarkGrey">D</td>
+				<td bgcolor="DarkGrey">D</td>
+				<td bgcolor="DarkGrey">D</td>
+				<td bgcolor="DarkGrey">D</td>
+				<td bgcolor="DarkGrey">D</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Internet based remote access system (monitor & control)</td>
+				<td bgcolor="red"></td> <!--Status colour-->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td bgcolor="DarkGrey">O,B</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>Accessible (read/write) data repository</td>
+				<td bgcolor="red"></td> <!--Status colour-->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+<!--Phase 3 (3 Weeks) -->
+			<tr>
+				<td>Connectivity between IDN and the Internet</td>
+				<td bgcolor="red"></td> <!--Status colour-->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="DarkGrey">D,B</td>
+				<td bgcolor="DarkGrey">D,B</td>
+				<td bgcolor="DarkGrey">D,B</td>
+			</tr>
+			
+			<tr>
+				<td>Fully functioning CAN diagnostic system</td>
+				<td bgcolor="red"></td> <!--Status colour-->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+			</tr>
+			
+			<tr>
+				<td>Oral Presentation</td>
+				<td bgcolor="red"></td> <!--Status colour-->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+			</tr>
+			
+			<tr>
+				<td>Final Project Report</td>
+				<td bgcolor="yellow"></td> <!--Status colour-->
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+				<td bgcolor="DarkGrey">D,O,B</td>
+			</tr>
+		</table><br/>
+		
 		<img src="https://media1.tenor.com/images/d8d7b003cc98b44d2a4ca87e27f0c304/tenor.gif">
 	</body>
 </html>
