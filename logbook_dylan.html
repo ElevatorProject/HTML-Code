@@ -8,6 +8,7 @@
 	h1 {color: blue;}
 	h2 {color: purple;}
 	ul {color: darkgreen;}
+	table, th, td {border: 1px solid black;}
 	</style>
 	</head>
 
@@ -66,6 +67,85 @@
 			- Created basic style sheet for project (with BEST FONT WINGDINGS) <br />
 			- Updated logbooks to be individual (per person) <br />
 			- updated logbooks to have images and captaions for all group members <br />
+			</p>
+		</ul>
+		<h2>Week 4</h2>
+		<ul>
+			<li>Entry 1: 28/05/18</li>
+			<p>
+			- Removed wingdings on index page- replaced with comic sans <br />
+			- Started creating master style guide <br />
+			- Set up CAN bus on desk to start programming each node <br />
+			- Installed code warrior <br />
+			</p>
+			<li>Entry 2: 30/05/18</li>
+			<p>
+			<table style ="width:10%"
+				<tr>
+					<td><strong>IDS</strong></th>
+				</tr>
+				<tr>
+					<td>car: 0x200</th>
+				</tr>
+				<tr>
+					<td>F1: 0x201</th>
+				</tr>
+				<tr>
+					<td>F2: 0x202</th>
+				</tr>
+				<tr>
+					<td>F3: 0x203</th>
+				</tr>
+			</table> <br/>
+			<table style ="width:10%"
+				<tr>
+					<td><strong>MSG's</strong</th>
+				</tr>
+				<tr>
+					<td>goto F1 0x05</th>
+				</tr>
+				<tr>
+					<td>goto F2 0x06</th>
+				</tr>
+				<tr>
+					<td>goto F3 0x07</th>
+				</tr>
+			</table> <br/>
+			- CAN TX arg list:<br />
+				<ul>
+				<li> IO of msg </li>
+				<li> priority </li>
+				<li> msg len </li>
+				<li> msg </li>
+				</ul>
+			- In interrupt Btn: fire msg  <br />
+			- In interrupt Rx: check incoming floor, apply appropriate mask to GPIO B  <br />
+			</p>
+			<li>Entry 3: 31/05/18</li>
+			<p>
+			- Finished floor 1 - button reading program requires testing <br />
+			1 = output <br />
+			0 = input <br />
+			- Need to fix msg ID to be 0x201, can message sends when btn is pressed <br />
+			- Works using address 100 and floor ID 0x05 <br />
+			- Need to get working 0x201 and msg 0x01 <br />
+			</p>
+		</ul>
+		<h2>Week 5</h2>
+		<ul>
+			<li>Entry 1: 02/06/18</li>
+			<p>
+			- Finished supervisor program - need to fix bug that causes crash on PI<br />
+			- Floor 1: 0x201<br />
+			- 0b: 0010 0000 0001<br />
+			- Issue seems to be related to supervisor not HCS12<br />
+			</p>
+			<li>Entry 2: 04/06/18</li>
+			<p>
+			- Floor controller is OK, just need to clean up code for submission<br />
+			- Issue is in PI A - try i) second handle for write, ii) sleep between read and write for 1 sec<br />
+			- Sleep did not fix - did delay until write<br />
+			- Interrupts are causing the board to run away<br />
 			</p>
 		</ul>
 	</body>
