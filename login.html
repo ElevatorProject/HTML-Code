@@ -1,50 +1,39 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Forms: Login Page </title>
+<html lang="en">
+    <head>
+        <title>Forms: Login Page </title>
 		<meta name="description" content="This is the login page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
 		<meta http-equiv="author" content="Dylan Kite" />
 		<meta http-equiv= "pragma" content="no-cache" />
 
-		<link href="css/login_style.css" type="text/css" rel="stylesheet" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	</head>
-	<body>
-		<div class="navbar">
-			<a href="login.html">Log In</a></li>
-			<a href="index.html">Home</a></li>
-			<a href="elev_controller.html">Controller</a>
-            <a href="about.html">About</a>
-            <a href="project_plan_breakdown.html">Project Plan</a>
-            <a href="videos.html">Videos</a></li>
-			<a href="documents.html">Documents</a></li>
-		<div class="dropdown">
-			<button class="dropbtn">Log Books
-				<i class="fa fa-caret-down"></i>
-			</button>
-		<div class="dropdown-content">
-            <a href="logbook_dylan.html">Weekly Log Book Dylan Kite</a>
-            <a href="logbook_olivia.html">Weekly Log Book Olivia Godwin</a>
-            <a href="logbook_blair.html">Weekly Log Book Blair Sharpe</a>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" href="css/login_style.css">
+    </head>
+    <body>
+        <div class="login-form">
+            <form action="php/login.php" method="post">
+                <h2 class="text-center">Log in</h2>       
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>
+                <div class="clearfix">
+                    <a href="request_access.html" class="pull-right">Sign Up</a>
+                </div>        
+            </form>
         </div>
-		</div>
-        </div>
-		
-		<br/><form action="php/login.php" method="get" id="login">
-			<h1>Please Log In</h1>
-			<p>Username:
-				<input type="text" name="username" required>
-			</p>
-			<p>Password:
-				<input type="password" name="password" required>
-			</p>
-			
-			<button type="submit"> Log In </button>
-			
-			<div><a href="request_access.html">Request Access</a></div>
-		</form>
-		
-	</body>
+    </body>
 	<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
-</html>
+</html>                                		                            
