@@ -1,10 +1,13 @@
 <?php
-$link = mysqli_connect("localhost", "root");
+$link = mysqli_connect("localhost", "world", "hello");
+
+$floor = $_POST["FloorNumber"];
+
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 $sql = "INSERT INTO FloorDiagnostic.floorControl (FloorNumber) VALUES
-    ($_POST["FloorNumber"])";
+    ('$floor')";
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
 } else{
