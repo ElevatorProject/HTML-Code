@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 	<title>Project VI - About</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
 	<style>
 		body {background-color: gainsboro;}
 		h1 {color: blue;}
@@ -9,52 +10,72 @@
 		p {color: darkgreen;}
 
 	#map{
-		width: 100%;
+		width: 50%;
 		height: 400px;
 		background-color: grey;
 	}
 	</style>
 	</head>
 	<body>
+		<div class="navbar">
+			<a href="login.html">Log In</a></li>
+			<a href="elev_controller.html">Controller</a>
+            <a href="about.html">About</a>
+            <a href="project_plan_breakdown.html">Project Plan</a>
+            <a href="videos.html">Videos</a></li>
+			<a href="documents.html">Documents</a></li>
+		<div class="dropdown">
+			<button class="dropbtn">Log Books
+				<i class="fa fa-caret-down"></i>
+			</button>
+        <div class="dropdown-content">
+            <a href="logbook_dylan.html">Weekly Log Book Dylan Kite</a>
+            <a href="logbook_olivia.html">Weekly Log Book Olivia Godwin</a>
+            <a href="logbook_blair.html">Weekly Log Book Blair Sharpe</a>
+        </div>
+		</div>
+        </div>
+		
 		<h1>Project VI - About</h1>
 		<p>Welcome to the <i>About</i> page for <b>Project VI </b>. <br />
-		This is where we will provide an overview of our project.
-		In this project we will design an elevator... <br />
+		The purpose of this project is to build and control an elevator, using a CAN bus communications environment,<br />
+		coupled with networked systems to create a means of tracking the elevator's operational/diagnostics data. <br />
+		Additionally, the elevator car's position and status is viewable to computers over the internet.<br />
 		We are <em> really </em> excited that you are here to witness <strong> history
-		in the making! </strong> <br /> This will be the greatest undertaking since
-		Einstein discovered E=mc<sup>2</sup></p>
+		in the making! </strong> <br />
+		</p>
 		
 		To view the Project Details page, click
-		<a href="/HTML-Code/project_details.html"> here </a>
+		<a href="project_details.html"> here </a>
 		<hr />
 
 		<h2>Our Group Members</h2>
 		<!-- TODO: add formatting to style sheet -->
 		<img src="images/group_photo.jpg" width="30%" height="30%"/>
 		<p><b>Blair Sharpe</b> <br />
-		hello world
+		World class water-skier and off-road dirt bike ethusiast. Master fisherman - holds the world record for wrestling the largest fish.
 		<p>
 
 		<p><b>Dylan Kite</b> <br />
-		hello world
+		Bike expert - 2020 Summer Olympics hopeful. Master drone inventor. 
 		<p>
 
 		<p><b>Olivia Godwin</b> <br />
-		hello world
+		Former snowboarding bunnyhill champion. Likes knitting and spending time with cats during her free time. 
 		<p>
 		
 		<div>
-		<h3>Google Maps Demo</h3>
+		<h3>Our Location - Conestoga College, Cambridge Ontario</h3>
 			<div id="map"></div>
 			<script>
 		// Initialize and add the map
 		function initMap() {
 			// The location of Uluru
-			var uluru = {lat:43.536 , lng:-80.289 };
+			var uluru = {lat:43.385260 , lng:-80.398638 };
 
 			// The map, centered at Uluru
 			var map = new google.maps.Map(
-					document.getElementById('map'), {zoom: 4, center: uluru});
+					document.getElementById('map'), {zoom: 12, center: uluru});
 			// The marker, positioned at Uluru
 			var marker = new google.maps.Marker({position: uluru, map: map});
 		}
