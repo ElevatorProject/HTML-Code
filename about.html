@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<title>Project VI - About</title>
-	<link href="css/style.css" type="text/css" rel="stylesheet" />
-	<style>
-		body {background-color: gainsboro;}
-		h1 {color: blue;}
-		h2 {color: blue;}
-		p {color: darkgreen;}
-
-	#map{
-		width: 50%;
-		height: 400px;
-		background-color: grey;
-	}
+		<title>Project VI - About</title>
+		<meta name="description" content="This is the About page for our elevator project" />
+		<meta name="robots" content="noindex nofollow" />
+		<meta http-equiv="author" content="Dylan Kite" />
+		<meta http-equiv= "pragma" content="no-cache" />
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<style>
+			body {background-color: gainsboro;}
+			h1 {color: blue;}
+			h2 {color: blue;}
+			p {color: darkgreen;}
+		#map{
+			width: 50%;
+			height: 400px;
+			background-color: grey;
+		}
 	</style>
 	</head>
 	<body>
@@ -55,17 +58,32 @@
 		<img src="images/group_photo.jpg" width="30%" height="30%"/>
 		<p><b>Blair Sharpe</b> <br />
 		World class water-skier and off-road dirt bike ethusiast. Master fisherman - holds the world record for wrestling the largest fish.
-		<p>
+		<br/> &copy;
+		<script type="text/javascript">
+		document.write(new Date().getFullYear()); </script>
+		Age: <script> document.write(new Date().getFullYear()-1996);</script>
+		</p>
+		
 
 		<p><b>Dylan Kite</b> <br />
 		Bike expert - 2020 Summer Olympics hopeful. Master drone inventor. 
-		<p>
+		<br/> &copy;
+		<script type="text/javascript">
+		document.write(new Date().getFullYear()); </script>
+		Age: <script> document.write(new Date().getFullYear()-1996);</script>
+		</p>
 
 		<p><b>Olivia Godwin</b> <br />
 		Former snowboarding bunnyhill champion. Likes knitting and spending time with cats during her free time. 
-		<p>
+		<br/> &copy;
+		<script type="text/javascript">
+		document.write(new Date().getFullYear()); </script>
+		Age: <script> document.write(new Date().getFullYear()-1993);</script>
+		</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z8jgHclC_yw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		
-		<div>
+        <div>
 		<h3>Our Location - Conestoga College, Cambridge Ontario</h3>
 			<div id="map"></div>
 			<script>
@@ -81,10 +99,10 @@
 			var marker = new google.maps.Marker({position: uluru, map: map});
 		}
 			</script>
-			<script async defer
+			<script> async defer
 				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX6WSgipf52X-T6zfIoy46PZ3O8owClp8&callback=initMap">
 			</script>
 		</div>
-		<footer>&copy; Dylan Kite</footer>
+		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
 	</body>
 </html>
