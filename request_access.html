@@ -6,6 +6,8 @@
 		<meta name="robots" content="noindex nofollow" />
 		<meta http-equiv="author" content="Dylan Kite" />
 		<meta http-equiv= "pragma" content="no-cache" />
+		
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
 	</head>
 
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -32,10 +34,17 @@
 		
 		<h1>Request Access</h1>
 		<form action="php/req_access.php" method="post">
-			<p>First Name: <input type="text" name="firstname" /> </p>
-			<p>Last Name: <input type="text" name="lastname" /> </p>
-			<p>Email: <input type="email" name="email" /> </p>
-			
+			<table>
+			<tr>
+				<td align="right"><p>First Name: <input type="text" name="firstname" /> </p>
+			</tr>
+			<tr>
+				<td align="right"><p>Last Name: <input type="text" name="lastname" /> </p>
+			</tr>
+			<tr>
+				<td align="right"><p>Email: <input type="email" name="email" /> </p>
+			</tr>
+			</table>
 			<input type="radio" name="fac_or_student" value="faculty" /> Faculty
 			<input type="radio" name="fac_or_student" value="student" /> Student
 			
@@ -50,9 +59,9 @@
 			<input type="checkbox" name="involvement" value="superman" /> Am superman <br />
 			
 			<p>Tell us a bit about yourself</p>
-			<textarea rows="6" cols="50"> Other details...</textarea><br />
+			<textarea placeholder="Other details..." rows="6" cols="50"></textarea><br />
 			<input type="submit" value="Submit Request" />
 		</form>
-		<footer>&copy; Dylan Kite</footer>
+		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
 	</body>
 </html>
