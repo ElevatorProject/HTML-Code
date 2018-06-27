@@ -36,30 +36,30 @@
 		<form action="php/req_access.php" method="post">
 			<table>
 			<tr>
-				<td align="right"><p>First Name: <input type="text" name="firstname" /> </p>
+				<td align="right"><p>First Name: <input type="text" name="firstname" required> </p>
 			</tr>
 			<tr>
-				<td align="right"><p>Last Name: <input type="text" name="lastname" /> </p>
+				<td align="right"><p>Last Name: <input type="text" name="lastname" required> </p>
 			</tr>
 			<tr>
-				<td align="right"><p>Email: <input type="email" name="email" /> </p>
+				<td align="right"><p>Email: <input type="email" name="email" required> </p>
 			</tr>
 			</table>
-			<input type="radio" name="fac_or_student" value="faculty" /> Faculty
-			<input type="radio" name="fac_or_student" value="student" /> Student
+			<input type="radio" name="fac_or_student" value="faculty" required> Faculty
+			<input type="radio" name="fac_or_student" value="student" required> Student
 			
 			<p>I currently ... (check all that apply) </p>
-			<input type="checkbox" name="involvement" value="none" /> Have no involvement in this project <br />
-			<input type="checkbox" name="involvement" value="instructor" /> Am an instructor in this project <br />
-			<input type="checkbox" name="involvement" value="instructor_other" /> Am an instructor a different project <br />
-			<input type="checkbox" name="involvement" value="student" /> Am a student in this project <br />
-			<input type="checkbox" name="involvement" value="student_other" /> Am a student in a different project <br />
-			<input type="checkbox" name="involvement" value="admin" /> Am a college administrator <br />
-			<input type="checkbox" name="involvement" value="external" /> Am an external reviewer <br />
-			<input type="checkbox" name="involvement" value="superman" /> Am superman <br />
+			<input type="checkbox" name="involvement" value="none"> Have no involvement in this project <br />
+			<input type="checkbox" name="involvement" value="instructor"> Am an instructor in this project <br />
+			<input type="checkbox" name="involvement" value="instructor_other"> Am an instructor a different project <br />
+			<input type="checkbox" name="involvement" value="student"> Am a student in this project <br />
+			<input type="checkbox" name="involvement" value="student_other"> Am a student in a different project <br />
+			<input type="checkbox" name="involvement" value="admin"> Am a college administrator <br />
+			<input type="checkbox" name="involvement" value="external"> Am an external reviewer <br />
+			<input type="checkbox" name="involvement" value="superman"> Am superman <br />
 			
 			<p>Tell us a bit about yourself</p>
-			<textarea placeholder="Other details..." rows="6" cols="50"></textarea><br />
+			<textarea placeholder="Other details..." rows="6" cols="50" required></textarea><br />
 			<input type="submit" value="Submit Request" />
 		</form>
 		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
