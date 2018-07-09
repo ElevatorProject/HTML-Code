@@ -1,9 +1,9 @@
 <?php
-$link = mysqli_connect("localhost", "world","hello");
+$link = mysqli_connect("localhost", "ese","ese");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "INSERT INTO FloorDiagnostic.floorControl (FloorNumber) VALUES 
+$sql = "INSERT INTO elevator.elevatorNetwork (currentFloor) VALUES 
     ('$_POST[FloorNumber]')";
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
