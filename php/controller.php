@@ -1,10 +1,11 @@
 <?php
-$link = mysqli_connect("localhost", "world","hello");
+$floor = $_POST["FloorNumber"];
+$link = mysqli_connect("localhost", "ese","ese");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "INSERT INTO FloorDiagnostic.floorControl (FloorNumber) VALUES 
-    ('$_POST[FloorNumber]')";
+$sql = "UPDATE elevator.elevatorNetwork SET 
+    currentFloor=$floor WHERE nodeID=1";
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
 } else{
