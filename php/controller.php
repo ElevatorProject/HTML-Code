@@ -1,10 +1,13 @@
 <?php
-$link = mysqli_connect("localhost", "world","hello");
+
+$floor = $_POST[FloorNumber];
+
+$link = mysqli_connect("localhost", "ese","ese");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$sql = "INSERT INTO FloorDiagnostic.floorControl (FloorNumber) VALUES 
-    ('$_POST[FloorNumber]')";
+$sql = "INSERT INTO elevator.elevatorNetwork (date, time, nodeID, status, currentFloor, requestedFloor, otherInfo) VALUES 
+    (0,0,0,0,2,3,NULL)";
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
 } else{
