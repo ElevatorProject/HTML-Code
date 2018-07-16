@@ -5,7 +5,7 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 $sql = "UPDATE elevator.elevatorNetwork SET 
-    currentFloor=$floor WHERE nodeID=1";
+    requestedFloor=$floor WHERE nodeID=1";
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
 } else{
