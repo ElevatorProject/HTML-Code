@@ -8,107 +8,112 @@
 		<meta http-equiv="author" content="Dylan Kite" />
 		<meta http-equiv= "pragma" content="no-cache" />
 
-        <!-- Latest compiled and minified CSS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Latest compiled and minified CSS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Home</a>
-            </div>
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="documents.html">documents</a></li>
-                    <li><a href="videos.html">videos</a></li>
-                    <li><a href="login.html">login</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">logbooks<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="logbook_blair.html">Blair</a></li>
-                            <li><a href="logbook_olivia.html">Olivia</a></li>
-                            <li><a href="logbook_dylan.html">Dylan</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://github.com/ElevatorProject">Github</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Elevator Controller</h1>
-            <p class="lead">Control your elevator wirelessly with ease</p>
-        </div>
-    </div>
-    <body>
-        <section id="loginform" class="outer-wrapper" style="padding-top:40px;padding-bottom:40px" >
-            <div class="inner-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 col-sm-offset-4">
-                            <h2 class="text-center">Pick a Floor</h2>
-                            <form role="form" action="php/controller.php" method="post">
-                                <div class="form-group" style="padding-top:20px">
-                                    <label for="FloorNumber">Floor Number</label>
-                                    <input type="number" class="form-control" name="FloorNumber" id="FloorNumber" placeholder="Floor Number">
-                                </div>
-                                <button type="submit" class="btn btn-success center-block">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        </section> 
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Home</a>
+			</div>
 
-        <div style="padding-top:20px;padding-bottom:40px"> 
-            <h2 class="text-center" >Elevator Location</h2>
-            <div id="map"></div>
-            <script>
-                // Initialize and add the map
-                function initMap() {
-                    // The location of Uluru
-                    var uluru = {lat:43.536 , lng:-80.289 };
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="about.html">about</a></li>
+					<li><a href="documents.html">documents</a></li>
+					<li><a href="videos.html">videos</a></li>
+					<li><a href="login.html">login</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">logbooks<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="logbook_blair.html">Blair</a></li>
+							<li><a href="logbook_olivia.html">Olivia</a></li>
+							<li><a href="logbook_dylan.html">Dylan</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://github.com/ElevatorProject">Github</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Elevator Controller</h1>
+			<p class="lead">Control your elevator wirelessly with ease</p>
+		</div>
+	</div>
+	<body>
+		<section id="loginform" class="outer-wrapper" style="padding-top:40px;padding-bottom:40px" >
+			<div class="inner-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-sm-offset-4">
+							<h2 class="text-center">Pick a Floor</h2>
+						<div id="output"></div>
+						  <script type="text/javascript" src="js/ajax.js"></script>
 
-                    // The map, centered at Uluru
-                    var map = new google.maps.Map(
-                        document.getElementById('map'), {zoom: 4, center: uluru});
-                    // The marker, positioned at Uluru
-                    var marker = new google.maps.Marker({position: uluru, map: map});
-                }
-                            </script>
-            <script async defer
-                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX6WSgipf52X-T6zfIoy46PZ3O8owClp8&callback=initMap">
-            </script>
-        </div>
+							<form role="form" action="php/controller.php" method="post">
+								<div class="form-group" style="padding-top:20px">
+									<label for="FloorNumber">Floor Number</label>
+									<input type="number" class="form-control" name="FloorNumber" id="FloorNumber" placeholder="Floor Number">
+								</div>
+								<button type="submit" class="btn btn-success center-block">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
 
-    <figure>
-		<img src="images/logo.png" alt="professional Photo from shutterstock.com"
-			title="Current Status of the Elevator Project" />
-	</figure>
-		
-	<p>Current Date & Time: <span id="datetime"></span></p>
-   	<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
+		  
+		<div id="result"></div>
+		<div style="padding-top:20px;padding-bottom:40px"> 
+			<h2 class="text-center" >Elevator Location</h2>
+			<div id="map"></div>
+			<script>
+// Initialize and add the map
+function initMap() {
+	// The location of Uluru
+	var uluru = {lat:43.536 , lng:-80.289 };
 
-    <script>
-	var dt = new Date();
-	document.getElementById("datetime").innerHTML = dt.toLocaleString();
-	</script>
+	// The map, centered at Uluru
+	var map = new google.maps.Map(
+			document.getElementById('map'), {zoom: 4, center: uluru});
+	// The marker, positioned at Uluru
+	var marker = new google.maps.Marker({position: uluru, map: map});
+}
+			</script>
+			<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX6WSgipf52X-T6zfIoy46PZ3O8owClp8&callback=initMap">
+			</script>
+		</div>
 
-    </body>
+		<figure>
+			<img src="images/logo.png" alt="professional Photo from shutterstock.com"
+			      title="Current Status of the Elevator Project" />
+		</figure>
+
+		<p>Current Date & Time: <span id="datetime"></span></p>
+		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
+
+		<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+		</script>
+
+	</body>
 </html>
