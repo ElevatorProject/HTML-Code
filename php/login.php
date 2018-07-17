@@ -8,7 +8,7 @@ echo $_POST['username'];
 if(!$validUser) $errorMsg = "Invalid username or password.";
 else {
 	$_SESSION["login"] = true; 
-	header('Location: ../index.html');
+	header('Location: ../index.php');
 }
 }
 echo $errorMsg;

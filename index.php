@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+
+<?php include "php/session_check.php";?>
 <html lang="en">
 	<head>
-		<title>Project VI Home Page</title>
 
+		<title>Project VI Home Page</title>
 		<meta name="description" content="This is the Home page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
 		<meta http-equiv="author" content="Dylan Kite" />
