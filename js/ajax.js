@@ -5,8 +5,18 @@ $(setInterval(function (){
 		dataType: 'json',                //data format      
 		success: function(data)          //on recieve of reply
 		{
-			$('#output').html("<p>" + "Floor number:" + data[0]['currentFloor'] +  "<br>" + data[0]['date'] + " " + data[0]['time'] + "</p>" ); //Set output element html
+			$('#output').html(" <p> " + data[0]['currentFloor'] + "</p>" ); //Set output element html
+
+			var width = 0;
+			if(data[0]['currentFloor'] === "1"){
+				width="33.3%";
+			}if(data[0]['currentFloor'] === "2"){
+				width="66.6%";
+			}if(data[0]['currentFloor'] === "3"){
+				width="100%";
+			}
+			$('#output').attr("style","width:"+width);
 		}
-		
 	});
-})); 
+
+}),1000); 
