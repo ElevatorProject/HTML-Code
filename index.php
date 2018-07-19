@@ -65,9 +65,12 @@
 					<div class="row">
 						<div class="col-sm-4 col-sm-offset-4">
 							<h2 class="text-center">Pick a Floor</h2>
-						  <script type="text/javascript" src="js/ajax.js"></script>
+					<div id="output">
+					
+					</div>
 					<div class="progress">
-					  <div id ="output" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+					  <script type="text/javascript" src="js/ajax.js"></script>
+					  <div id ="" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
 					  aria-valuemin="0" aria-valuemax="100" style="width:40%">
 					  </div>
 					</div>
