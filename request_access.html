@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
 
-    <title>Forms: Request Access</title>
+		<title>Forms: Request Access</title>
 		<meta name="description" content="This is the request access page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
 		<meta http-equiv="author" content="Dylan Kite" />
 		<meta http-equiv= "pragma" content="no-cache" />
-		
+
 		<meta charset="UTF-8">
 
 		<!-- Latest compiled and minified CSS -->
@@ -27,42 +27,47 @@
 		<div class="login-form">
 			<form action="php/req_access.php" method="post">
 				<h2 class="text-center">Sign Up</h2>       
-					<strong>First Name<strong>
+				<strong>First Name<strong>
 						<br>
 						<div class="form-group">
 							<input name="firstname" type="text" class="form-control" placeholder="Firstname" required="required">
 						</div>
-					<strong>Last Name<strong>
-						<br>
-						<div class="form-group">
-							<input name="lastname" type="text" class="form-control" placeholder="Lastname" required="required">
-						</div>
-					<strong>Email</strong>
-						<div class="form-group">
-							<input name="email" type="text" class="form-control" placeholder="Email" required="required">
-						</div>
-					<strong></strong>
-						<div class="form-group">
-							<div class="form-check">
-								    <input class="form-check-input" name="student/faculty" type="radio" id="Student">
-								        <label class="form-check-label" for="Faculty">Student</label>
-							</div>
+						<strong>Last Name<strong>
+								<br>
+								<div class="form-group">
+									<input name="lastname" type="text" class="form-control" placeholder="Lastname" required="required">
+								</div>
+								<strong>Email</strong>
+								<div class="form-group">
+									<input name="email" type="text" class="form-control" placeholder="Email" required="required">
+								</div>
+								<strong>Password</strong>
+								<div class="form-group">
+									<input name="password" type="password" class="form-control" placeholder="Password" required="required">
+								</div>
 
-							<div class="form-check">
-								    <input class="form-check-input" name="student/faculty" type="radio" id="Faculty" checked>
-								        <label class="form-check-label" for="Faculty">Faculty</label>
-							</div>
-						
-						</div>
+								<strong></strong>
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" name="student/faculty" type="radio" id="Student">
+										<label class="form-check-label" for="Faculty">Student</label>
+									</div>
 
-					<div class="form-group">
-						    <label for="Textarea">Example textarea</label>
-						        <textarea name="text" class="form-control" id="Textarea" rows="3"></textarea>
-					</div>
+									<div class="form-check">
+										<input class="form-check-input" name="student/faculty" type="radio" id="Faculty" checked>
+										<label class="form-check-label" for="Faculty">Faculty</label>
+									</div>
 
-						<div class="form-group">
-							<button type="submit" class="btn btn-primary btn-block">Request</button>
-						</div>
+								</div>
+
+								<div class="form-group">
+									<label for="Textarea">Example textarea</label>
+									<textarea name="text" class="form-control" id="Textarea" rows="3"></textarea>
+								</div>
+
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary btn-block">Request</button>
+								</div>
 			</form>
 		</div>
 		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
