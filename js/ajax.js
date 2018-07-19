@@ -5,8 +5,8 @@ $(setInterval(function (){
 		dataType: 'json',                //data format      
 		success: function(data)          //on recieve of reply
 		{
-			$('#output').html("<p>" + "Floor number:" + data[0]['currentFloor'] +  "<br>" + data[0]['date'] + " " + data[0]['time'] + "</p>" ); //Set output element html
+			$('#output').html( "current floor: "+ data[0]['currentFloor']); //Set output element html
 		}
-		
 	});
-})); 
+
+}), 3000); 

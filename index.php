@@ -65,9 +65,12 @@
 					<div class="row">
 						<div class="col-sm-4 col-sm-offset-4">
 							<h2 class="text-center">Pick a Floor</h2>
-						<div id="output"></div>
 						  <script type="text/javascript" src="js/ajax.js"></script>
-
+					<div class="progress">
+					  <div id ="output" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+					  aria-valuemin="0" aria-valuemax="100" style="width:40%">
+					  </div>
+					</div>
 							<form role="form" action="php/controller.php" method="post">
 								<div class="form-group" style="padding-top:20px">
 									<label for="FloorNumber">Floor Number</label>
@@ -75,18 +78,18 @@
 								</div>
 								<button type="submit" class="btn btn-success center-block">Submit</button>
 							</form>
-						</div>
+						<br>
 					</div>
 				</div>
 			</div>
 		</section> 
 
-		  
+
 		<div id="result"></div>
 		<div style="padding-top:20px;padding-bottom:40px"> 
 			<h2 class="text-center" >Elevator Location</h2>
 			<div id="map"></div>
-			<script>
+<script>
 // Initialize and add the map
 function initMap() {
 	// The location of Uluru
@@ -94,11 +97,11 @@ function initMap() {
 
 	// The map, centered at Uluru
 	var map = new google.maps.Map(
-			document.getElementById('map'), {zoom: 4, center: uluru});
+		document.getElementById('map'), {zoom: 4, center: uluru});
 	// The marker, positioned at Uluru
 	var marker = new google.maps.Marker({position: uluru, map: map});
 }
-			</script>
+</script>
 			<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX6WSgipf52X-T6zfIoy46PZ3O8owClp8&callback=initMap">
 			</script>
@@ -112,10 +115,10 @@ function initMap() {
 		<p>Current Date & Time: <span id="datetime"></span></p>
 		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
 
-		<script>
+<script>
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleString();
-		</script>
+</script>
 
 	</body>
 </html>
