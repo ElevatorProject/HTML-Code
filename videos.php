@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<?php include "php/session_check.php";?>
 <html lang="en">
 	<head>
-		<title>Documents</title>
-		<meta name="description" content="This is the Documents page for our elevator project" />
+		<title>Videos</title>
+		<meta name="description" content="This is the About page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
 		<meta http-equiv="author" content="Dylan Kite" />
 		<meta http-equiv= "pragma" content="no-cache" />
@@ -36,9 +37,13 @@
 		</div>
         </div>
 		
-		<h1>Documents</h1>
-		<p> Under Construction </p>
-		<img src="https://cdn.shopify.com/s/files/1/0108/2252/files/Black-_-White-Notebook-A4-2.jpg">
-		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
+		<h1>Project Videos</h1>
+		<p> Week 5 - Progress </p>
+		<iframe width="560" height="315"
+			src="https://www.youtube.com/embed/TWwmLeuprps"
+			frameborder="0" allow="autoplay; encrypted-media"
+			allowfullscreen>
+		</iframe>
 	</body>
+	<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
 </html>

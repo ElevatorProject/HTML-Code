@@ -32,20 +32,21 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="about.html">about</a></li>
-					<li><a href="documents.html">documents</a></li>
-					<li><a href="videos.html">videos</a></li>
-					<li><a href="login.html">login</a></li>
+					<li><a href="about.php">about</a></li>
+					<li><a href="documents.php">documents</a></li>
+					<li><a href="videos.php">videos</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">logbooks<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="logbook_blair.html">Blair</a></li>
-							<li><a href="logbook_olivia.html">Olivia</a></li>
-							<li><a href="logbook_dylan.html">Dylan</a></li>
+							<li><a href="logbook_blair.php">Blair</a></li>
+							<li><a href="logbook_olivia.php">Olivia</a></li>
+							<li><a href="logbook_dylan.php">Dylan</a></li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="request_access.html">Sign Up</a></li>
 					<li><a href="https://github.com/ElevatorProject">Github</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
