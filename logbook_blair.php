@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include "php/session_check.php";?>
 <html lang="en">
 	<head>
 		<title>Blair Sharpe's Weekly Log Book</title>
@@ -19,7 +20,7 @@
 	<body>
 		 <div class="navbar">
 			<a href="login.html">Log In</a></li>
-			<a href="index.html">Home</a></li>
+			<a href="index.php">Home</a></li>
 			<a href="elev_controller.html">Controller</a>
             <a href="about.html">About</a>
             <a href="project_plan_breakdown.html">Project Plan</a>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include "php/session_check.php";?>
 <html lang="en">
 	<head>
 		<title>Dylan Kite's Weekly Log Book</title>

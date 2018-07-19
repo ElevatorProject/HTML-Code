@@ -1,28 +1,36 @@
 <?php
 session_start();
 $errorMsg = "";
-$validUser = $_SESSION["login"] === true;
+$validUser = True;
+
 if(isset($_POST["sub"])) {
-$validUser = $_POST["username"] == "admin" && $_POST["password"] == "password";
-if(!$validUser) $errorMsg = "Invalid username or password.";
-else $_SESSION["login"] = true;
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$link = mysqli_connect("localhost", "ese","ese");
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-if($validUser) {
-header("Location: /login-success.php"); die();
+$sql = "select * from elevator.users where
+    email = '$email' and password='$password'";
+$result = mysqli_query($link, $sql);
+if(!$result){
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
+if($result->num_rows==0){
+	$validUser = False;
+}else{
+	$validUser = True;
+}
+mysqli_close($link);
+}
+
+if(!$validUser){ $errorMsg = "Invalid username or password.";}
+else {
+	$_SESSION["login"] = true; 
+	header('Location: ../index.php');
+}
+
+echo $errorMsg;
 ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-		<title>Login</title>
-	</head>
-	<body>
-		<form name="input" action="" method="post">
-			<label for="username">Username:</label><input type="text" value="<?= $_POST["username"] ?>" id="username" name="username" />
-			<label for="password">Password:</label><input type="password" value="" id="password" name="password" />
-			<div class="error"><?= $errorMsg ?></div>
-			<input type="submit" value="Home" name="sub" />
-		</form>
-	</body>
-</html>

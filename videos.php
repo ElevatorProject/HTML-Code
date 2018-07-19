@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<?php include "php/session_check.php";?>
+<html lang="en">
 	<head>
-		<title>Elevator Controller</title>
-		<meta name="description" content="This is the Elevator Controller page for our elevator project" />
+		<title>Videos</title>
+		<meta name="description" content="This is the About page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
 		<meta http-equiv="author" content="Dylan Kite" />
 		<meta http-equiv= "pragma" content="no-cache" />
 
 		<link href="css/style.css" type="text/css" rel="stylesheet" />
-		<style>
-		body {background-color: gainsboro;}
-		h1 {color: blue;}
-		h2 {color: green;}
-		
-		</style>
+	<style>
+	body {background-color: gainsboro;}
+	h1 {color: blue;}
+	p {color: darkgreen;}
+	</style>
 	</head>
+	
 	<body>
-		
 		<div class="navbar">
 			<a href="login.html">Log In</a></li>
 			<a href="index.html">Home</a></li>
@@ -37,12 +37,13 @@
 		</div>
         </div>
 		
-		<form action="php/controller.php" method="post">
-			<h1>What floor do you want to go to?</h1>
-			<h2>Floor: <input type="number" name="FloorNumber" min="1" max="3"/> </h2>
-
-			<button type="submit"> GO! </button>
-		</form>
+		<h1>Project Videos</h1>
+		<p> Week 5 - Progress </p>
+		<iframe width="560" height="315"
+			src="https://www.youtube.com/embed/TWwmLeuprps"
+			frameborder="0" allow="autoplay; encrypted-media"
+			allowfullscreen>
+		</iframe>
 	</body>
 	<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
 </html>
