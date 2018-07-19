@@ -65,13 +65,12 @@
 					<div class="row">
 						<div class="col-sm-4 col-sm-offset-4">
 							<h2 class="text-center">Pick a Floor</h2>
-					<div id="output">
-					
-					</div>
+					<br>
+					<h5 class="text-center" >Current Floor</h5>
 					<div class="progress">
-					  <script type="text/javascript" src="js/ajax.js"></script>
-					  <div id ="" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-					  aria-valuemin="0" aria-valuemax="100" style="width:40%">
+					  <script type="text/javascript" src="js/ajax.js"></script> 
+					  <div id ="output" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70"
+					  aria-valuemin="0" aria-valuemax="100" style="width:70%">
 					  </div>
 					</div>
 							<form role="form" action="php/controller.php" method="post">
