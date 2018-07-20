@@ -42,6 +42,19 @@
 							<li><a href="logbook_dylan.php">Dylan</a></li>
 						</ul>
 					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">database<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="nodeTable.php">node Table</a></li>
+
+							<li><a href="usersTable.php">Users Table</a></li>
+							<li><a href="floorTable.php">Floor Table</a></li>
+
+						</ul>
+
+					</li>
+
+
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="login.html">Login</a></li>
