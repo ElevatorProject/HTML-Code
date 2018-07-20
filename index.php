@@ -42,7 +42,20 @@
 							<li><a href="logbook_olivia.php">Olivia</a></li>
 							<li><a href="logbook_dylan.php">Dylan</a></li>
 						</ul>
+
 					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">database<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="nodeTable.php">node Table</a></li>
+
+							<li><a href="usersTable.php">Users Table</a></li>
+							<li><a href="floorTable.php">Floor Table</a></li>
+
+						</ul>
+
+					</li>
+
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="login.html">Login</a></li>
@@ -73,7 +86,8 @@
 					  aria-valuemin="0" aria-valuemax="100" style="width:70%">
 					  </div>
 					</div>
-							<form role="form" action="php/controller.php" method="post">
+							<iframe name="ifloor" style="display:none;"></iframe>
+							<form role="form" action="php/controller.php" method="post" target="ifloor">
 								<div class="form-group" style="padding-top:20px">
 									<label for="FloorNumber">Floor Number</label>
 									<input type="number" class="form-control" name="FloorNumber" id="FloorNumber" placeholder="Floor Number">
