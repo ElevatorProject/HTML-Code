@@ -73,7 +73,8 @@
 					  aria-valuemin="0" aria-valuemax="100" style="width:70%">
 					  </div>
 					</div>
-							<form role="form" action="php/controller.php" method="post">
+							<iframe name="ifloor" style="display:none;"></iframe>
+							<form role="form" action="php/controller.php" method="post" target="ifloor">
 								<div class="form-group" style="padding-top:20px">
 									<label for="FloorNumber">Floor Number</label>
 									<input type="number" class="form-control" name="FloorNumber" id="FloorNumber" placeholder="Floor Number">
