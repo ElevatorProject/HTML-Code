@@ -10,12 +10,17 @@ $(setInterval(function (){
 			var width = 0;
 			if(data[0]['currentFloor'] === "1"){
 				width="33.3%";
+				type="success";
 			}if(data[0]['currentFloor'] === "2"){
 				width="66.6%";
+				type="info";
+
 			}if(data[0]['currentFloor'] === "3"){
 				width="100%";
+				type="warning";
 			}
 			$('#output').attr("style","width:"+width);
+			$('#output').attr("class","progress-bar progress-bar-" + type);
 		}
 	});
 
