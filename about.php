@@ -1,109 +1,125 @@
 <!DOCTYPE html>
 <?php include "php/session_check.php";?>
 <html lang="en">
-	<head>
-		<title>Project VI - About</title>
-		<meta name="description" content="This is the About page for our elevator project" />
-		<meta name="robots" content="noindex nofollow" />
-		<meta http-equiv="author" content="Dylan Kite" />
-		<meta http-equiv= "pragma" content="no-cache" />
-		<link href="css/style.css" type="text/css" rel="stylesheet" />
-		<style>
-			body {background-color: gainsboro;}
-			h1 {color: blue;}
-			h2 {color: blue;}
-			p {color: darkgreen;}
-		#map{
-			width: 50%;
-			height: 400px;
-			background-color: grey;
-		}
-	</style>
-	</head>
-	<body>
-		<div class="navbar">
-			<a href="login.html">Log In</a></li>
-			<a href="index.html">Home</a></li>
-			<a href="elev_controller.html">Controller</a>
-            <a href="about.html">About</a>
-            <a href="project_plan_breakdown.html">Project Plan</a>
-            <a href="videos.html">Videos</a></li>
-			<a href="documents.html">Documents</a></li>
-		<div class="dropdown">
-			<button class="dropbtn">Log Books
-				<i class="fa fa-caret-down"></i>
-			</button>
-        <div class="dropdown-content">
-            <a href="logbook_dylan.html">Weekly Log Book Dylan Kite</a>
-            <a href="logbook_olivia.html">Weekly Log Book Olivia Godwin</a>
-            <a href="logbook_blair.html">Weekly Log Book Blair Sharpe</a>
+    <head>
+        <title>Project VI - About</title>
+        <meta name="description" content="This is the About page for our elevator project" />
+        <meta name="robots" content="noindex nofollow" />
+        <meta http-equiv= "pragma" content="no-cache" />
+        <!-- Latest compiled and minified CSS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="about.php">about</a></li>
+                    <li><a href="documents.php">documents</a></li>
+                    <li><a href="videos.php">videos</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">logbooks<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="logbook_blair.php">Blair</a></li>
+                            <li><a href="logbook_olivia.php">Olivia</a></li>
+                            <li><a href="logbook_dylan.php">Dylan</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">database<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="nodeTable.php">node Table</a></li>
+
+                            <li><a href="usersTable.php">Users Table</a></li>
+                            <li><a href="floorTable.php">Floor Table</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="request_access.html">Sign Up</a></li>
+                    <li><a href="https://github.com/ElevatorProject">Github</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+                    <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1 class="display-4">About Us</h1>
+                      <p class="lead"> Welcome to the <i>About</i> page for Project VI.
+        The purpose of this project is to build and control an elevator, using a CAN bus communications environment,
+        coupled with networked systems to create a means of tracking the elevator's operational and diagnostics data. 
+        Additionally, the elevator car's position and status is viewable to computers over the internet.
+                      <hr class="my-4">
+                      <p>View the project details page!</p>
+                      <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="project_details.php" role="button">Details</a>
+                      </p>
+                    </div>
+
+                    </div>
+        <h2 align="center" >Our Group Members</h2>
+        <!-- TODO: add formatting to style sheet -->
+        <br>
+        <br>
+        <div align="center">
+        <img src="images/group_photo.jpg" width="40%" height="30%"/>
+
+<br>
+<br>
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Blair Sharpe</h3>
+      <p class="card-text">
+        World class water-skier and off-road dirt bike ethusiast. Master fisherman - holds the world record for wrestling the largest fish.
+</p>
+    </div>
+  </div>
+<br>
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Dylan Kite</h3>
+      <p class="card-text">
+Bike expert - 2020 Summer Olympics hopeful. Master drone inventor. 
+</p>
+    </div>
+  </div>
+<br>
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Olivia Godwin</h3>
+      <p class="card-text">
+Former snowboarding bunnyhill champion. Likes knitting and spending time with cats during her free time. 
+</p>
+    </div>
+  </div>
+</div>
         </div>
-		</div>
+<br>
+<br>
+<br>
+<br>
+        <div align="center">
+        <footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
         </div>
-		
-		<h1>Project VI - About</h1>
-		<p>Welcome to the <i>About</i> page for <b>Project VI </b>. <br />
-		The purpose of this project is to build and control an elevator, using a CAN bus communications environment,<br />
-		coupled with networked systems to create a means of tracking the elevator's operational/diagnostics data. <br />
-		Additionally, the elevator car's position and status is viewable to computers over the internet.<br />
-		We are <em> really </em> excited that you are here to witness <strong> history
-		in the making! </strong> <br />
-		</p>
-		
-		To view the Project Details page, click
-		<a href="project_details.html"> here </a>
-		<hr />
-
-		<h2>Our Group Members</h2>
-		<!-- TODO: add formatting to style sheet -->
-		<img src="images/group_photo.jpg" width="30%" height="30%"/>
-		<p><b>Blair Sharpe</b> <br />
-		World class water-skier and off-road dirt bike ethusiast. Master fisherman - holds the world record for wrestling the largest fish.
-		<br/> &copy;
-		<script type="text/javascript">
-		document.write(new Date().getFullYear()); </script>
-		Age: <script> document.write(new Date().getFullYear()-1996);</script>
-		</p>
-		
-
-		<p><b>Dylan Kite</b> <br />
-		Bike expert - 2020 Summer Olympics hopeful. Master drone inventor. 
-		<br/> &copy;
-		<script type="text/javascript">
-		document.write(new Date().getFullYear()); </script>
-		Age: <script> document.write(new Date().getFullYear()-1996);</script>
-		</p>
-
-		<p><b>Olivia Godwin</b> <br />
-		Former snowboarding bunnyhill champion. Likes knitting and spending time with cats during her free time. 
-		<br/> &copy;
-		<script type="text/javascript">
-		document.write(new Date().getFullYear()); </script>
-		Age: <script> document.write(new Date().getFullYear()-1993);</script>
-		</p>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z8jgHclC_yw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		
-        <div>
-		<h3>Our Location - Conestoga College, Cambridge Ontario</h3>
-			<div id="map"></div>
-			<script>
-		// Initialize and add the map
-		function initMap() {
-			// The location of Uluru
-			var uluru = {lat:43.385260 , lng:-80.398638 };
-
-			// The map, centered at Uluru
-			var map = new google.maps.Map(
-					document.getElementById('map'), {zoom: 12, center: uluru});
-			// The marker, positioned at Uluru
-			var marker = new google.maps.Marker({position: uluru, map: map});
-		}
-			</script>
-			<script async defer
-				 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX6WSgipf52X-T6zfIoy46PZ3O8owClp8&callback=initMap">
-			</script>
-		</div>
-		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
-	</body>
+    </body>
 </html>
