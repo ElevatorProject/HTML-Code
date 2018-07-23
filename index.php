@@ -90,7 +90,7 @@
 							<form role="form" action="php/controller.php" method="post" target="ifloor">
 								<div class="form-group" style="padding-top:20px">
 									<label for="FloorNumber">Floor Number</label>
-									<input type="number" class="form-control" name="FloorNumber" id="FloorNumber" placeholder="Floor Number">
+									<input min="1" max="3" type="number" class="form-control" name="FloorNumber" id="FloorNumber" placeholder="Floor Number">
 								</div>
 								<button type="submit" class="btn btn-success center-block">Submit</button>
 							</form>
