@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <?php include "php/session_check.php";?>
 <html lang="en">
-	<head>
-		<title>Dylan Kite's Weekly Log Book</title>
-		<link href="css/style_logbook_dylan.css" type="text/css" rel="stylesheet" />
-		<meta name="description" content="This is Dylan's Logbook page for our elevator project" />
+		<head>
+		<title>Olivia Godwin's Weekly Log Book</title>
+		<meta name="description" content="This is Olivia's logbook page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
-		<meta http-equiv="author" content="Dylan Kite" />
+		<meta http-equiv="author" content="Olivia Godwin" />
 		<meta http-equiv= "pragma" content="no-cache" />
-    
-	<style>
-	body {background-color: gainsboro;}
-	h1 {color: blue;}
-	h2 {color: purple;}
-	ul {color: darkgreen;}
-	table, th, td {border: 1px solid black;}
-	</style>
+		
+		<link href="css/style_logbook.css" type="text/css" rel="stylesheet" />
+		 <!-- Latest compiled and minified CSS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 	</head>
 
-	<body>
-		<div class="navbar">
-			<a href="login.html">Log In</a></li>
-			<a href="index.html">Home</a></li>
-			<a href="elev_controller.html">Controller</a>
-            <a href="about.html">About</a>
-            <a href="project_plan_breakdown.html">Project Plan</a>
-            <a href="videos.html">Videos</a></li>
-			<a href="documents.html">Documents</a></li>
-		<div class="dropdown">
-			<button class="dropbtn">Log Books
-				<i class="fa fa-caret-down"></i>
-			</button>
-		<div class="dropdown-content">
-            <a href="logbook_dylan.html">Weekly Log Book Dylan Kite</a>
-            <a href="logbook_olivia.html">Weekly Log Book Olivia Godwin</a>
-            <a href="logbook_blair.html">Weekly Log Book Blair Sharpe</a>
-        </div>
-		</div>
-        </div>
-		<form id= logbook_area>
-		<h1>Weekly Log Book - Dylan  </h1>
+	<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Home</a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="about.php">about</a></li>
+                    <li><a href="documents.php">documents</a></li>
+                    <li><a href="videos.php">videos</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">logbooks<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="logbook_blair.php">Blair</a></li>
+                            <li><a href="logbook_olivia.php">Olivia</a></li>
+                            <li><a href="logbook_dylan.php">Dylan</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">database<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="nodeTable.php">Node Table</a></li>
+
+                            <li><a href="usersTable.php">Users Table</a></li>
+                            <li><a href="floorTable.php">Floor Table</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="request_access.html">Sign Up</a></li>
+                    <li><a href="https://github.com/ElevatorProject">Github</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+                    <div class="jumbotron jumbotron-fluid">
+                    <div class="container" align="center">
+                      <h1 class="display-4">Weekly Logbook - Dylan Kite</h1>
+					</div>
+       
+	<body>
+		
 		<figure>
+			<div align="center">
 			<img src="images/dylan.jpg" alt="A Very Good looking photo of Dylan"
 				title="A Nice Hat" />
 			<figcaption><b>Dylan Kite: </b>Programming extraordinaire </figcaption>
-		</figure>
+		</figure></div>
+		
 		<h2>Index</h2>
 			<ul>
 				<li><a href="#w1">Week 1</a></li>
@@ -58,6 +92,8 @@
 				<li><a href="#w8">Week 8</a></li>
 				<li><a href="#w9">Week 9</a></li>
 				<li><a href="#w10">Week 10</a></li>
+				<li><a href="#w11">Week 11</a></li>
+				<li><a href="#w12">Week 12</a></li>
             </ul>
 		<h2 id="w1">Week 1</h2>
 		<ul>
@@ -252,23 +288,35 @@
             - next step is to test applied changes<br />
             </p>
         </ul>
-        <h2 id="w10">week 10</h2>
+        <h2 id="w10">Week 10</h2>
         <ul>
-            <li>Entry 1: 09/08/18</li>
+            <li>Entry 1: 09/07/18</li>
             <p>
-            - starting test plan for c++ sql database read <br />
+            - starting to test C++ SQL database read <br />
+			- merged bootstrap branch (with Blair) <br />
+			- main database (epoch time, current floor, requested floor - elevator network) <br />
+            </p>
+        </ul>
+		<h2 id="w11">Week 11</h2>
+        <ul>
+            <li>Entry 1: 19/07/18</li>
+            <p>
+            - changed name to Requested Floor instead of Request Floor - floor requests work as expected but current floor doesn't update from supervisor controller <br />
+			- set up logging database in C++ (logging table: epoch time nodeID msg)
+			- 2 new functions: 1 that reads the latest entry and one that writes the latest log
+            </p>
+        </ul>
+		<h2 id="w12">Week 12</h2>
+        <ul>
+            <li>Entry 1: 23/08/18</li>
+            <p>
+            - Queue - dynamic array holds epoch time of everything, delete entries starting at oldest until only n entries remain <br />
             </p>
         </ul>
 	<a href="#top">Back to Top</a>
 	</form>
 	<div id="floating_flame_LR">
 		<img src= "images/flame.gif" />
-	</div>
-	<div id="floating_flame_UL">
-		<img src= "images/flame.gif" />
-	</div>
-	<div id="floating_flame_UR">
-		<img src= "images/guy.gif" />
 	</div>
 	<div id="floating_flame_LL">
 		<img src= "images/guy.gif" />
