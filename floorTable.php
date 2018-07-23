@@ -20,7 +20,7 @@
 
 		<link rel="stylesheet" href="css/index.css">
 	</head>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default" style="height:50px">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -58,6 +58,7 @@
 					<li><a href="login.html">Login</a></li>
 					<li><a href="request_access.html">Sign Up</a></li>
 					<li><a href="https://github.com/ElevatorProject">Github</a></li>
+					<li><form action="php/logout.php"><button type="submit" class="btn navbar-btn btn-danger btn-sm">Log Out</button></form></li> 
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
