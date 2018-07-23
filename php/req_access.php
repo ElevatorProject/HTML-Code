@@ -11,5 +11,6 @@ $sql = "INSERT INTO elevator.users (firstname, lastname, email, type, password, 
     ('$firstname', '$lastname', '$email', '$type', '$password', '$notes')";
 mysqli_query($link, $sql);
 mysqli_close($link);
+
 header("Location: ../login.html");
 ?>
