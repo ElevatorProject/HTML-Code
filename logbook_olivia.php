@@ -3,48 +3,86 @@
 <html lang="en">
 	<head>
 		<title>Olivia Godwin's Weekly Log Book</title>
-		<meta name="description" content="This is Olivia's logbook About page for our elevator project" />
+		<meta name="description" content="This is Olivia's logbook page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
-		<meta http-equiv="author" content="Dylan Kite" />
+		<meta http-equiv="author" content="Olivia Godwin" />
 		<meta http-equiv= "pragma" content="no-cache" />
-
+		
 		<link href="css/style_logbook.css" type="text/css" rel="stylesheet" />
-	<style>
-	body {background-color: gainsboro;}
-	h1 {color: blue;}
-	h2 {color: purple;}
-	ul {color: darkgreen;}
-	</style>
+		 <!-- Latest compiled and minified CSS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 	</head>
 	
+	<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="about.php">about</a></li>
+                    <li><a href="documents.php">documents</a></li>
+                    <li><a href="videos.php">videos</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">logbooks<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="logbook_blair.php">Blair</a></li>
+                            <li><a href="logbook_olivia.php">Olivia</a></li>
+                            <li><a href="logbook_dylan.php">Dylan</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">database<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="nodeTable.php">Node Table</a></li>
+
+                            <li><a href="usersTable.php">Users Table</a></li>
+                            <li><a href="floorTable.php">Floor Table</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="request_access.html">Sign Up</a></li>
+                    <li><a href="https://github.com/ElevatorProject">Github</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+                    <div class="jumbotron jumbotron-fluid">
+                    <div class="container" align="center">
+                      <h1 class="display-4">Weekly Logbook - Olivia Godwin</h1>
+					</div>
+       
+	
+	
 	<body>
-		<div class="navbar">
-			<a href="login.html">Log In</a></li>
-			<a href="index.html">Home</a></li>
-			<a href="elev_controller.html">Controller</a>
-            <a href="about.html">About</a>
-            <a href="project_plan_breakdown.html">Project Plan</a>
-            <a href="videos.html">Videos</a></li>
-			<a href="documents.html">Documents</a></li>
-		<div class="dropdown">
-			<button class="dropbtn">Log Books
-				<i class="fa fa-caret-down"></i>
-			</button>
-		<div class="dropdown-content">
-            <a href="logbook_dylan.html">Weekly Log Book Dylan Kite</a>
-            <a href="logbook_olivia.html">Weekly Log Book Olivia Godwin</a>
-            <a href="logbook_blair.html">Weekly Log Book Blair Sharpe</a>
-        </div>
-		</div>
-        </div>
-		
-		<h1>Weekly Log Book - Olivia </h1>
 		<figure>
+		<div align="center">
 			<img src="images/olivia.jpg" alt="Olivia Godwin"
 				 title="A True Connoisseur Of IPA's (Indian Pale Apple-juice)" />
 			<figcaption><b>Olivia Godwin: </b>Loves drinking apple juice, shown above </figcaption>
-		</figure>
+		</figure></div>
 
+		
+		
 		<h2>Week 1</h2>
 		<ul>
 			<li>Entry 1: May 10, 2018 </li>
@@ -122,21 +160,21 @@
 
 		<h2>Week 6</h2>
 		<ul>
-			<li>Entry 9: June 12, 2018 </li>
+			<li>Entry 11: June 12, 2018 </li>
 			<p>- watch Javascript tutorials, review S.Eng. notes - <a href ="https://www.w3schools.com/js/js_input_examples.asp"> Javascript reference here </a><br />
 			</p>
-			<li>Entry 10: June 15, 2018</li>
+			<li>Entry 12: June 15, 2018</li>
 			<p>- more Javascript tutorials - login, form creation <br />
 			</p>
 		</ul>
 
 		<h2>Week 7</h2>
 		<ul>
-			<li>Entry 9: June 19, 2018 </li>
+			<li>Entry 13: June 19, 2018 </li>
 			<p>- Javascript tutorials - login, logout, form validation, sessions<br />
 			- Backend PHP - watch tutorials, review class notes<br />
 			</p>
-			<li>Entry 10: June 22, 2018</li>
+			<li>Entry 14: June 22, 2018</li>
 			<p>- Backend PHP - <a href ="https://www.tutorialspoint.com/php/index.htm"> PHP reference here </a><br />
 			- Worked on front-end dev. assignment - <br />
 			</p>
@@ -144,11 +182,11 @@
 
 		<h2>Week 8</h2>
 		<ul>
-			<li>Entry 9: June 26, 2018 </li>
+			<li>Entry 15: June 26, 2018 </li>
 			<p>- MySQL tutorials <a href ="https://www.tutorialspoint.com/mysql/index.htm"> MySQL reference here </a><br />
 			- Worked on front-end dev. assignment<br />
 			</p>
-			<li>Entry 10: June 28, 2018</li>
+			<li>Entry 16: June 28, 2018</li>
 			<p>- PHP and MySQL class notes review, more tutorial examples<br />
 			- Worked on front-end dev. assignment - field validation, incorporating javascript into the login page<br />
 			</p>
@@ -156,18 +194,47 @@
 
 		<h2>Week 9</h2>
 		<ul>
-			<li>Entry 9: July 3, 2018 </li>
+			<li>Entry 17: July 3, 2018 </li>
 			<p>- PHP and MySQL, experimenting with basic tables and inputting data<br />
 			- Ajax basics, getting started - <a href ="https://www.w3schools.com/xml/ajax_intro.asp"> AJAX intro. here </a><br />
 			</p>
-			<li>Entry 10: July 6, 2018</li>
+			<li>Entry 18: July 6, 2018</li>
 			<p>- MySQL - experimenting with inputting data and tables<br />
-			- Experimenting with Ajax - <a href ="https://www.tutorialspoint.com/ajax/index.htm"> AJAX intro. here </a><br />
+			- Experimenting with Ajax - <a href ="https://www.tutorialspoint.com/ajax/index.htm"> AJAX full reference here </a><br />
+			</p>
+		</ul>
+		
+		<h2>Week 10</h2>
+		<ul>
+			<li>Entry 19: July 11, 2018 </li>
+			<p>- Testplan notes - Phase 2 technical <br />
+			</p>
+		</ul>
+	
+		<h2>Week 11</h2>
+		<ul>
+			<li>Entry 20: July 17, 2018 </li>
+			<p>- Bootstrap: Documents, Videos pages <br />
+			- Testplan write up - Phase 2 technical</a><br />
+			</p>
+			<li>Entry 21: July 19, 2018</li>
+			<p>- cleaning up Javascript in html code - move to .js files<br />
+			- Testplan write up - Phase 2 technical</a><br />
+			</p>
+		</ul>
+		
+		<h2>Week 12</h2>
+		<ul>
+			<li>Entry 22: July 23, 2018 </li>
+			<p>- Updated group logbooks - convert to Bootstrap<br />
+			- Finishing touches to testplan - preparation for end of Phase 2<br />
 			</p>
 		</ul>
 	
 	<a href="#top">Back to Top</a>
 	</body>
-	<footer>&copy; Olivia Godwin</footer>
+	 <div align="center">
+        <footer>&copy; Olivia Godwin</footer>
+     </div>
 </html>
 
