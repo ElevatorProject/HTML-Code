@@ -230,6 +230,16 @@
 			- Finishing touches to testplan - preparation for end of Phase 2<br />
 			</p>
 		</ul>
+		
+		<h2>Week 13</h2>
+		<ul>
+			<li>Entry 22: July 30, 2018 </li>
+			<p>- Updated group logbooks<br />
+			- Software backend assignment - code clean-up<br/>
+			</p>
+		</ul>
+		
+		- Software backend assignment - code clean-up<br/>
 	
 	<a href="#top">Back to Top</a>
 	</body>

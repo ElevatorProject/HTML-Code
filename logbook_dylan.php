@@ -94,6 +94,7 @@
 				<li><a href="#w10">Week 10</a></li>
 				<li><a href="#w11">Week 11</a></li>
 				<li><a href="#w12">Week 12</a></li>
+				<li><a href="#w13">Week 13</a></li>
             </ul>
 		<h2 id="w1">Week 1</h2>
 		<ul>
@@ -308,9 +309,19 @@
         </ul>
 		<h2 id="w12">Week 12</h2>
         <ul>
-            <li>Entry 1: 23/08/18</li>
+            <li>Entry 1: 23/07/18</li>
             <p>
             - Queue - dynamic array holds epoch time of everything, delete entries starting at oldest until only n entries remain <br />
+            </p>
+        </ul>
+
+		<h2 id="w13">Week 13</h2>
+        <ul>
+            <li>Entry 1: 30/07/18</li>
+            <p>
+            - Researched into python scripting for twitchplays - add-on so that the elevator can be controlled from chat<br />
+			- Went skateboarding Tuesday - 5km<br/>
+			- Software backend assignment - code clean-up<br/>
             </p>
         </ul>
 	<a href="#top">Back to Top</a>
