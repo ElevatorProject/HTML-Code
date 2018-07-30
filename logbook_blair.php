@@ -155,6 +155,12 @@
 			<li>Updated controller form - login with username</li>
 		</ul>
 		
+		<h2>Week 13</h2>
+		<ul>
+			<li>Biology self-study: Fishing research assignment - Grand River fly fishing</li>
+			<li>Software backend assignment - code clean-up</li>
+		</ul>
+		
 	<a href="#top">Back to Top</a>
 	<footer>&copy; Blair Sharpe</footer>
 	</body>
