@@ -1,15 +1,9 @@
 <?php
-class InvalidInputException extends Exception{
-        public function errorMessage(){
+require_once('Node.php');
 
-           $errorMessage = "Invalid Input";
-           return $errorMessage;
-        }
-}
-class Elevator extends node{
+class Elevator extends Node{
 
-    private $idNumber;
-    private $floor = $_POST["FloorNumber"];
+   //  public $idNumber;
 
     public function getID(){
 
@@ -35,22 +29,17 @@ class Elevator extends node{
     }
 
     public function setFloor(int $floor){
-
-        try{
-        if($floor < 1 || $floor > 3){
-            throw new InvalidInputException($email);
-        }
-
-        $link = mysqli_connect("localhost", "ese","ese");
-        $sql = "UPDATE elevator.elevatorNetwork SET 
-                requestedFloor=$floor WHERE nodeID=1";
-        mysqli_query($link, $sql);
-        mysqli_close($link);
-
-        }
-        catch (customException $e){
-            echo $e->errorMessage();
-        }
+	    echo $floor;
+	    if($floor == 1){
+		    Node::firstFloor();
+	    }if($floor == 2){
+		    Node::secondFloor();
+	    }if($floor == 3){
+		    Node::thirdFloor();
+	    }
     }
 }
+
+$obj = new Elevator();
+$obj->setFloor(3);
 ?>
