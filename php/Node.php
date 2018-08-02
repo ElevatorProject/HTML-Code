@@ -12,7 +12,7 @@ class Node{
 
 
     private function query_sql($conn, $msg) {
-        $result = mysqli_query($link, $sql);
+        $result = mysqli_query($conn, $msg);
 	    if(!$result){
 	        throw new nodeException ();
 		}
@@ -24,12 +24,12 @@ class Node{
         $sql = "UPDATE elevator.elevatorNetwork SET 
                 requestedFloor= 1 WHERE nodeID=1";
 
-        $result = mysqli_query($link, $sql);
+      //  $result = mysqli_query($link, $sql);
 	    //if(!$result){
 	    //    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
         //}
         try {
-            query_sql($link, $sql);
+		Node::query_sql($link, $sql);
         }
         catch (customException $e) {
             //display custom message
@@ -43,8 +43,16 @@ class Node{
       $link = mysqli_connect("localhost", "ese","ese");
       $sql = "UPDATE elevator.elevatorNetwork SET 
                 requestedFloor=2 WHERE nodeID=1";
-      mysqli_query($link, $sql);
-      mysqli_close($link);
+     // mysqli_query($link, $sql);
+	 try {
+		Node::query_sql($link, $sql);
+        }
+        catch (customException $e) {
+            //display custom message
+            echo $e->errorMessage();
+        }
+
+	mysqli_close($link);
   }
 
   public function thirdFloor(){
@@ -52,8 +60,16 @@ class Node{
         $link = mysqli_connect("localhost", "ese","ese");
         $sql = "UPDATE elevator.elevatorNetwork SET 
                 requestedFloor=3 WHERE nodeID=1";
-        mysqli_query($link, $sql);
-        mysqli_close($link);
+       // mysqli_query($link, $sql);
+	 try {
+		Node::query_sql($link, $sql);
+        }
+        catch (customException $e) {
+            //display custom message
+            echo $e->errorMessage();
+        }
+
+	mysqli_close($link);
   }
 
 }

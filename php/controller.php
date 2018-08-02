@@ -7,7 +7,9 @@ class Elevator extends Node{
 
     public function getID(){
 
+	    return 1;
     }
+
     public function getFloor(){
 
     $mysqli = new mysqli("localhost", "ese","ese");
@@ -29,7 +31,13 @@ class Elevator extends Node{
     }
 
     public function setFloor(int $floor){
-	    echo $floor;
+
+	    try{
+
+	    if($floor >3 || $floor<0){
+		    throw new Exception('Invalid Input');
+	    }
+
 	    if($floor == 1){
 		    Node::firstFloor();
 	    }if($floor == 2){
@@ -37,9 +45,12 @@ class Elevator extends Node{
 	    }if($floor == 3){
 		    Node::thirdFloor();
 	    }
+	    }catch(Exception $e){
+		    echo $e->getMessage();
+	    }
     }
 }
 
 $obj = new Elevator();
-$obj->setFloor(3);
+$obj->setFloor(1);
 ?>
