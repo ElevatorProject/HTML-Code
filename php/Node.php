@@ -5,7 +5,7 @@ class Node{
 
   $link = mysqli_connect("localhost", "ese","ese");
         $sql = "UPDATE elevator.elevatorNetwork SET 
-                requestedFloor=$floor WHERE nodeID=1";
+                requestedFloor= 1 floor WHERE nodeID=1";
         mysqli_query($link, $sql);
         mysqli_close($link);
 
@@ -14,7 +14,7 @@ class Node{
   public function secondFloor(){
   $link = mysqli_connect("localhost", "ese","ese");
         $sql = "UPDATE elevator.elevatorNetwork SET 
-                requestedFloor=$floor WHERE nodeID=1";
+                requestedFloor=2 floor WHERE nodeID=1";
         mysqli_query($link, $sql);
         mysqli_close($link);
 
@@ -23,7 +23,7 @@ class Node{
   public function thirdFloor(){
   $link = mysqli_connect("localhost", "ese","ese");
         $sql = "UPDATE elevator.elevatorNetwork SET 
-                requestedFloor=$floor WHERE nodeID=1";
+                requestedFloor=3 floor WHERE nodeID=1";
         mysqli_query($link, $sql);
         mysqli_close($link);
   }
