@@ -1,11 +1,20 @@
 <?php
+class nodeException extends Exception {
+  public function errorMessage() {
+    //error message
+    $errorMsg = 'Error on line '.$this->getLine().' in '.$this->getFile()
+    ."ERROR: Could not able to execute $sql. " . mysqli_error($link);
+    return $errorMsg;
+  }
+}
+
 class Node{
 
 
     private function query_sql($conn, $msg) {
         $result = mysqli_query($link, $sql);
 	    if(!$result){
-	        throw new Exception ("ERROR: Could not able to execute $sql. " . mysqli_error($link));
+	        throw new nodeException ();
 		}
     }
 
@@ -21,6 +30,10 @@ class Node{
         //}
         try {
             query_sql($link, $sql);
+        }
+        catch (customException $e) {
+            //display custom message
+            echo $e->errorMessage();
         }
         mysqli_close($link);
   }
