@@ -71,14 +71,13 @@
 	<body>
 		<div class="container" align="center">	
 		<p><u><i>Carrier Schematic</i></u></p>
-		<img src="images/carrier.jpg" width="80%"/></br></br>
+		<img src="images/carrier.JPG" width="80%"/></br></br>
 		<p><u><i>Floor 1 Schematic</i></u></p>
-		<img src="images/floor1.jpg" width="80%"/></br></br>
+		<img src="images/floor1.JPG" width="80%"/></br></br>
 		<p><u><i>Floor 2 Schematic</i></u></p>
-		<img src="images/floor2.jpg" width="80%"/></br></br>
+		<img src="images/floor2.JPG" width="80%"/></br></br>
 		<p><u><i>Floor 3 Schematic</i></u></p>
-		<img src="images/floor3.jpg" width="80%"/></br></br>
-		
+		<img src="images/floor3.JPG" width="80%"/></br></br>
 		<footer>&copy; Dylan Kite, Olivia Godwin, Blair Sharpe</footer>
 	</div>
 	</body>
