@@ -34,7 +34,7 @@ class Elevator extends Node{
 
 	    try{
 
-	    if($floor >3 || $floor<0){
+	    if($floor >3 || $floor<1){
 		    throw new Exception('Invalid Input');
 	    }
 
@@ -46,11 +46,9 @@ class Elevator extends Node{
 		    Node::thirdFloor();
 	    }
 	    }catch(Exception $e){
-		    echo $e->getMessage();
+		    echo "error";
 	    }
     }
 }
 
-$obj = new Elevator();
-$obj->setFloor(1);
 ?>
