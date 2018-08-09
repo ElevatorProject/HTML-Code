@@ -5,7 +5,7 @@
 		<title>Blair Sharpe's Weekly Log Book</title>
 		<meta name="description" content="This is Blair's logbook page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
-		<meta http-equiv="author" content="Dylan Kite" />
+		<meta http-equiv="author" content="Blair Sharpe" />
 		<meta http-equiv= "pragma" content="no-cache" />
 
 		<link href="css/style_logbook.css" type="text/css" rel="stylesheet" />
