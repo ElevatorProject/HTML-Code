@@ -2,10 +2,10 @@
 <?php include "php/session_check.php";?>
 <html lang="en">
 		<head>
-		<title>Olivia Godwin's Weekly Log Book</title>
-		<meta name="description" content="This is Olivia's logbook page for our elevator project" />
+		<title>Dylan Kite's Weekly Log Book</title>
+		<meta name="description" content="This is Dylan's logbook page for our elevator project" />
 		<meta name="robots" content="noindex nofollow" />
-		<meta http-equiv="author" content="Olivia Godwin" />
+		<meta http-equiv="author" content="Dylan Kite" />
 		<meta http-equiv= "pragma" content="no-cache" />
 		
 		<link href="css/style_logbook.css" type="text/css" rel="stylesheet" />
@@ -105,7 +105,7 @@
 			</P>
 			<li>Entry 2: 10/05/18</li>
 			<p>
-			- Determined rolls for the project. I will be working on mainly embedded code <br />
+			- Determined roles for the project. I will be working on mainly embedded code <br />
 			- Started looking into how to use the scope to decode can  with Olivia(3000 series scope) <br />
 			</p>
 			<li>Entry 3: 14/05/18</li>
